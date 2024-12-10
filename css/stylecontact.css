@@ -1,0 +1,949 @@
+/*---------------------------
+Base styles for all screen widths
+----------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 100% ;/*16px=1em*/
+	line-height: 1.25em;
+    background-image: url(images/);
+}
+
+#wrapper
+{
+  
+	max-width: inherit;
+	margin: 0 auto;
+    background-color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.post	{
+    margin: 4px 4;
+	background-color: #CCC;
+    border-radius: 25px;
+    padding: 20px;
+      
+}
+
+
+label {display: block;}
+input {display: block;}
+
+.post	{
+    margin: 4px 0;
+	background-color: #CCC;
+    border-radius: 25px;
+    padding: 20px;
+      
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=date]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:black;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  border-radius: 5px;
+  background-color:grey;
+  padding: 20px;
+}
+nav{}
+
+h1 { font-size: 2.25em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    font-size: 36px;
+    line-height: 50px;
+}
+/* 36px */
+h2 { font-size: 1.75em;
+font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    font-size: 36px;
+    line-height: 50px;} /* 28px */
+h3 { font-size: 1.375em;
+font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    font-size: 36px;
+    line-height: 50px;}
+
+
+
+/* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+p
+{
+	line-height: 1.5em;
+}
+
+small	{
+	font-size: .75em; /* 12px*/
+}
+.weeks{background-color: lightgray;
+}
+
+.weeks a{ display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+    
+    
+}
+.weeks a:hover {
+  background-color: #ddd;
+  color: green;
+}
+
+/* Add a color to the active/current link */
+.weeks a.active {
+  background-color: green;
+  color: black;
+}
+
+
+blockquote
+{
+	padding: 1em 2em 1em 2em;
+	margin: 0 0 2em 0;
+	border-left: 5px solid #eee;
+    background-color: white;
+}
+
+table
+{
+	margin-right: 3em;
+	border-spacing: 0;
+	border-collapse:inherit;
+	border-top: 1px solid #ddd;
+	width: auto;
+}
+
+
+/**The nth child pseudo-class selects every odd row of the table to apply a background colour
+*Reference - https://developer.mozilla.org/en-US/docs/Web/CSS/%3Anth-child
+*/
+tbody tr:nth-child(odd) {
+	background-color: darkgrey;
+}
+
+
+
+caption	{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.2em 0 .5em 0;
+	text-transform: uppercase;
+}
+
+a	{ text-decoration: none; }
+	
+a:link { color: white; }
+a:visited { color: darkgrey; }
+a:hover { 
+	color: green;
+	text-decoration:underline;
+}
+
+
+a[href^="#top"] {
+	font-size: .75em;
+	background: url(../learningJournal/images/up.png) no-repeat left bottom;
+	padding-left: 1.4em;
+}
+th, td
+{
+	font-size: 100%;
+	padding: 15px;
+	border: 2px solid #ddd ;
+	vertical-align: top;
+	text-align: left;
+	white-space:inherit;
+}
+
+
+
+footer a:link { color: #fff; }
+footer a:hover{color:green}
+
+
+/* -----------------------
+Grid layout
+------------------------*/
+.banner {
+    
+	grid-area: banner;
+    width: auto;
+
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: auto;
+  
+
+}
+
+
+
+nav {
+	grid-area: nav;
+}
+
+table {
+	grid-area: table;
+}
+
+main {
+    text-align:inherit;
+    /*width: auto;*/
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+#wrapper {
+	display:grid;
+	grid-gap: 0;
+	grid-template-areas:
+		"banner"
+		"menu"
+		"nav"
+		"main"
+		"table"
+        "aside"
+		"footer";
+}
+
+
+
+
+
+
+
+/* --------------------------
+Layout Styles - mobile first
+----------------------------*/
+.banner
+{
+    text-align: inherit;
+	color: #fff;
+	background: #555;
+	padding: 1em 0 1em 1.25em;
+}
+
+.menu
+{
+	
+    position: sticky;
+	
+	text-transform: uppercase;
+	font-weight: bold;
+     display: inline-block;
+    color: white;
+  text-align: center;
+  padding:  50px;
+  text-decoration: none;
+  font-size: px;
+  border-radius: 5px;
+}
+
+nav h3, aside h3 {
+	margin-left: .6em;
+}
+
+main
+{margin: 0 1em 0 1em;
+	
+}
+
+footer
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+}
+
+/**Makes images 100% width of containing element i.e. flexible
+*Remove image width and height attributes from html!
+*/
+img	
+{max-width:100%;
+	
+}
+
+/* -----------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+--------------------------------------------------*/
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu a
+{
+	display: block;
+	padding:50px;
+	color: white;
+	text-decoration:none;
+	border-bottom: 1px solid grey;
+}
+.menu li
+{
+	display: block; /*display in a vertical column*/
+	margin: 0;
+}
+
+a.active-page{display: block;
+	padding: 50px ;
+	color: black;
+	text-decoration:none;
+	border-bottom: 1px solid ;
+   
+
+}
+
+
+
+
+
+
+
+@media (max-width: 35em) {
+	table {
+    		display:none;
+   }
+    
+}
+.cards {
+  display: flex;
+  flex-wrap:wrap;
+}
+.card {
+  display: flex; 
+   ;
+}
+.card-content {
+  flex-direction: column;
+  width: 10%;
+  border: 3px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 1.25em 1.25em 0.3em 0;
+  padding: 1em 1em;
+    overflow: hidden;
+     background-color: grey;
+}
+.media	{
+  margin: 0;
+  padding: 0;
+}
+.media li	{
+  margin: 0;
+  padding: 0;
+}
+
+/*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em){
+  .card { width: 50%; }
+}
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) {
+  .card { width: 33.33%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+-------------------------------------------------------*/
+/*---------------------------
+Base styles for all screen widths
+----------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 100% ;/*16px=1em*/
+	line-height: 1.25em;
+}
+
+#wrapper
+{
+	max-width: inherit;
+	margin: 0 auto;
+    background-color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.post	{
+    margin: 4px 4;
+	background-color: #CCC;
+    border-radius: 25px;
+    padding: 20px;
+      
+}
+
+
+label {display: block;}
+input {display: block;}
+
+.post	{
+    margin: 4px 0;
+	background-color: #CCC;
+    border-radius: 25px;
+    padding: 20px;
+      
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=date]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:black;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  border-radius: 5px;
+  background-color:grey;
+  padding: 20px;
+}
+nav{}
+
+h1 { font-size: 2.25em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    font-size: 36px;
+    line-height: 50px;
+}
+/* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+p
+{
+	line-height: 1.5em;
+}
+
+small	{
+	font-size: .75em; /* 12px*/
+}
+.weeks{background-color: lightgray;
+}
+
+.weeks a{ display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+    
+    
+}
+.weeks a:hover {
+  background-color: #ddd;
+  color: green;
+}
+
+/* Add a color to the active/current link */
+.weeks a.active {
+  background-color: green;
+  color: black;
+}
+
+
+blockquote
+{
+	padding: 1em 2em 1em 2em;
+	margin: 0 0 2em 0;
+	border-left: 5px solid #eee;
+    background-color: white;
+}
+
+table
+{
+	margin-right: 3em;
+	border-spacing: 0;
+	border-collapse:inherit;
+	border-top: 1px solid #ddd;
+	width: auto;
+}
+.video-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+iframe	{
+  width: 100%;
+  height: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9 */
+  height: 0; 
+}
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**The nth child pseudo-class selects every odd row of the table to apply a background colour
+*Reference - https://developer.mozilla.org/en-US/docs/Web/CSS/%3Anth-child
+*/
+tbody tr:nth-child(odd) {
+	background-color: darkgrey;
+}
+
+
+
+caption	{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.2em 0 .5em 0;
+	text-transform: uppercase;
+}
+
+a	{ text-decoration: none; }
+	
+a:link { color: white; }
+a:visited { color: darkgrey; }
+a:hover { 
+	color: green;
+	text-decoration:underline;
+}
+
+
+a[href^="#top"] {
+	font-size: .75em;
+	background: url(../learningJournal/images/up.png) no-repeat left bottom;
+	padding-left: 1.4em;
+}
+th, td
+{
+	font-size: 100%;
+	padding: 15px;
+	border: 2px solid #ddd ;
+	vertical-align: top;
+	text-align: left;
+	white-space:inherit;
+}
+
+
+
+footer a:link { color: #fff; }
+footer a:hover{color:green}
+
+
+/* -----------------------
+Grid layout
+------------------------*/
+.banner {
+    
+	grid-area: banner;
+    width: auto;
+
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+    width: auto;
+  
+
+}
+.menu {
+    position: sticky;
+    top: 0;
+    
+	grid-area: menu;
+   
+}
+
+
+nav {
+	grid-area: nav;
+}
+
+table {
+	grid-area: table;
+}
+
+main {
+    text-align:inherit;
+    /*width: auto;*/
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+#wrapper {
+	display:grid;
+	grid-gap: 0;
+	grid-template-areas:
+		"banner"
+		"menu"
+		"nav"
+		"main"
+		"table"
+        "aside"
+		"footer";
+}
+
+
+
+
+
+
+
+/* --------------------------
+Layout Styles - mobile first
+----------------------------*/
+.banner
+{
+    text-align: inherit;
+	color: #fff;
+	background: #555;
+	padding: 1em 0 1em 1.25em;
+}
+
+.menu
+{
+	background: grey ;
+    position: sticky;
+
+	text-transform: uppercase;
+	font-weight: bold;
+     display: inline-block;
+    color: white;
+  text-align: center;
+  padding:  50px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+
+nav h3, aside h3 {
+	margin-left: .6em;
+}
+
+main
+{margin: 0 1em 0 1em;
+	
+}
+
+footer
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+}
+
+/**Makes images 100% width of containing element i.e. flexible
+*Remove image width and height attributes from html!
+*/
+img	
+{max-width:100%;
+	
+}
+
+/* -----------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+--------------------------------------------------*/
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu a
+{
+	display: block;
+	padding: .7em 1.25em .7em 1.25em;
+	color: white;
+	text-decoration:none;
+	border-bottom: 1px solid grey;
+}
+.menu li
+{
+	display: block; /*display in a vertical column*/
+	margin: 0;
+}
+
+a.active-page{display: block;
+	padding: .8em 1.25em .7em 1.25em;
+	color: green;
+	text-decoration:none;
+	border-bottom: 1px solid ;
+   
+
+}
+
+
+
+.menu a:hover { color: green;
+}
+
+
+
+@media (max-width: 35em) {
+	table {
+    		display:none;
+   }
+    
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex; 
+}
+.card-content {
+  flex-direction: column;
+  width: 100%;
+  border: 3px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 1.25em 1.25em 0.3em 0;
+  padding: 1em 1em;
+}
+.media	{
+  margin: 0;
+  padding: 0;
+}
+.media li	{
+  margin: 0;
+  padding: 0;
+}
+
+/*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em){
+  .card { width: 50%; }
+}
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) {
+  .card { width: 33.33%; }
+}
+
+
+@media (min-width: 50em) {
+  #wrapper {
+    grid-template-columns: 0;
+    grid-template-areas: 
+      "banner  banner"
+      "menu  menu"
+	  "nav  main"
+      "aside  table"
+      "footer  footer";
+      
+
+  }
+   
+}
+@media (min-width: 50em)
+{
+	.banner { padding: 0 0 0 3em;
+    text-align:inherit;}
+	
+/* Menu navigation - inline layout for wider screens */	
+	
+	.menu { padding: 1em 0 1em 3em;
+    position:sticky;
+    text-align: inherit;
+    }
+
+	.menu li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	.menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+   
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+-------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------
+Mobile screens - portrait
+-------------------------------------------------------*/
+/*Timtable not displayed on small width screens*/
+
+
+
+/*float/clear classes */
+.fltrt {  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: .5em;
+}
+.fltlt { /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: .5em;
+}
+.clear { /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}
+
+
+/* ----------------------------------------------------
+Mobile screens - portrait
+-------------------------------------------------------*/
+/*Timtable not displayed on small width screens*/
+
+
+
+/*float/clear classes */
+.fltrt {  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: .5em;
+}
+.fltlt { /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: .5em;
+}
+.clear { /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}

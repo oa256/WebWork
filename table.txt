@@ -1,0 +1,81 @@
+<article>
+                   <header class= "post">
+                       <a id="timetable"></a>
+                       
+				<table >
+                    
+                    <caption>My timetable</caption>
+							<tr>
+								<th>Time</th>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+							</tr>
+							<tr>
+								<td>9-10</td>
+								<td></td>
+								<td>CI435 Lecture</td>
+								<td></td>
+								<td>CI401 lab</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10-11</td>
+								<td>CI401 Lecture</td>
+								<td>CI402 Lecture </td>
+								<td></td>
+								<td>CI401 Lab</td>
+								<td></td>
+								
+							</tr>
+							<tr>
+								<td>11-12</td>
+								<td></td>
+								<td>CI402 Lab</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td>12-13</td>
+								<td>CI435 Lecture</td>
+								<td>CI435 Lab</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>13-14</td>
+								<td></td>
+								<td> </td>
+								<td></td>
+								<td>CI400 Lab</td>
+								<td></td>
+								
+							</tr>
+							<tr>
+								<td>14-15</td>
+								<td>CI400 lecture</td>
+								<td></td>
+								<td></td>
+								<td>CI400 Lab</td>
+								<td></td>
+								
+                    </tr>
+					<tr>
+                        <td>15-16</td>
+                        <td>CI400 Lecture</td>
+                        <td>CI435 Tutorial </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						
+                    </tr>
+					
+					
+                </table>
+                   </header>
+                </article>
+                
